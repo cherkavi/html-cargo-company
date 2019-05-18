@@ -1,0 +1,77 @@
+/* http://css3buttongenerator.com/ 
+http://www.cssportal.com/css-style-editor/
+*/
+
+#title{
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75);
+	color: #007d08;
+	font-size: 50px;
+ 	font-family: Georgia;
+ 	background-image: url("../image/flag.png");
+  background-size: cover;
+  background-repeat: round;
+}
+
+#wrapper {
+	max-width: 600px;
+	min-width: 320px;	
+
+	background-color: #ffffff;
+	border-left: 1px solid #9a9a9a;
+	border-right: 1px solid #9a9a9a;
+	-webkit-box-shadow: 0 0 20px rgba(100, 100, 100, 0.25);
+	-moz-box-shadow: 0 0 20px rgba(100, 100, 100, 0.25);
+	box-shadow: 0 0 20px rgba(100, 100, 100, 0.25);
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+
+#block_price_controller, #block_cargo_controller, #block_contacts_controller, #block_trip_controller{
+ background: #94ccf2;
+  background-image: -webkit-linear-gradient(top, #94ccf2, #005485);
+  background-image: -moz-linear-gradient(top, #94ccf2, #005485);
+  background-image: -ms-linear-gradient(top, #94ccf2, #005485);
+  background-image: -o-linear-gradient(top, #94ccf2, #005485);
+  background-image: linear-gradient(to bottom, #94ccf2, #005485);
+  -webkit-border-radius: 14;
+  -moz-border-radius: 14;
+  border-radius: 14px;
+  text-shadow: 1px 1px 3px #000000;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+#block_price, #block_cargo, #block_contacts, #block_trip{
+	background-color: #FFFDDB;
+	color: #000000;
+	padding: 9px;
+	font-style: normal;
+}
+
+#block_price_controller:hover, #block_cargo_controller:hover, #block_contacts_controller:hover, #block_trip_controller:hover{
+  background: #00e817;
+  background-image: -webkit-linear-gradient(top, #00e817, #007d08);
+  background-image: -moz-linear-gradient(top, #00e817, #007d08);
+  background-image: -ms-linear-gradient(top, #00e817, #007d08);
+  background-image: -o-linear-gradient(top, #00e817, #007d08);
+  background-image: linear-gradient(to bottom, #00e817, #007d08);
+  text-decoration: none;	
+}
+
+#amount{
+  padding: 6px;
+  font-family: helvetica;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.contact_icon{
+	width: 20px;
+}

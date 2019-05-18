@@ -1,0 +1,80 @@
+<html>
+	<head>
+		<title>Пассажиро-Грузоперевозки Украина-Германия</title>
+		<meta charset="utf-8">
+		<meta name="keywords" lang="ru" content="пасажироперевезення, перевезення, вантажоперевезення, трансфер"> 
+		<meta name="description" content="вантажно-пасажирські перевезення Україна-Німеччина">
+		<meta name="author" content="cherkavi">
+
+		<link rel="stylesheet" href="css/main.css" type="text/css">
+
+		<script type="text/javascript" src="script/cities.js"></script>
+
+		<script type="text/javascript" src="script/main-obf.js"></script>
+
+	</head>
+
+	<body onload="init();">
+		<div id="wrapper">
+			<div id="title">
+				<div align="center">ВАНТАЖНО-ПАСАЖИРСЬКІ ПЕРЕВЕЗЕННЯ</div>
+			</div>
+
+			<div align="center" id="block_price_controller" onclick="change_visibility('block_price')" >
+			вартість проїзду</div>
+			<div align="center" id="block_price">
+				<div>
+					<fieldset onchange="init_combobox('city_from');var skip_city=document.getElementById('city_from').value;init_combobox('city_to', skip_city)">
+						<input type="radio" name="direction" value="ua" id="direction_ua">
+						<label for="direction_ua">Україна-Німеччина</label> 
+						<input type="radio" name="direction" value="de" id="direction_de" checked="checked">
+						<label for="direction_de">Німеччина-Україна</label> 
+					</fieldset>
+				</div>
+				<div>
+					Звідки:
+					<select id="city_from" onfocus="init_combobox('city_from');var skip_city=document.getElementById('city_from').value;init_combobox('city_to', skip_city)">
+					</select>
+				</div>
+				<div>
+					Куда:
+					<select id="city_to" 
+					onfocus="var skip_city=document.getElementById('city_from').value;init_combobox('city_to', skip_city)" 
+					onchange="update_price(document.getElementById('city_from').value, document.getElementById('city_to').value)" 
+					>
+					</select>
+				</div>
+				<div>
+					<span>Вартість:</span>
+					<span id="amount"></span>
+				</div>
+			</div>
+
+			<div align="center" id="block_cargo_controller" onclick="change_visibility('block_cargo')" >
+				вантажоперевезення
+			</div>
+			<div colspan="4" id="block_cargo"> 							
+				<div><b>Вартість: </b>1.5&#8364; кг ( не менше 5 &#8364; за посилку ), від 20 кг - 1.0&#8364; кг</div>
+				<div><b>до 30 кг: </b>Тернопіль, Нова Пошта відділення №5</div>
+				<div><b>понад 30 кг : </b>Тернопіль, Нова Пошта відділення №5</div>
+				<div><b>Отримувач : </b>Князєв Віталій Іванович +380 67 99 3 99 16</div>
+				<div align="center"><a href ="">скачати форму для маркування посилки</a></div>
+			</div>
+
+			<div align="center" id="block_trip_controller" onclick="change_visibility('block_trip')">наступний рейс</div>
+			<div id="block_trip">
+				<div align="center" id="next_trip"></div> 
+			</div>
+			
+
+			<div align="center" id="block_contacts_controller" onclick="change_visibility('block_contacts')" >контакти</div>
+
+			<div id="block_contacts">
+				<div><img class="contact_icon" src="image/phone-ukraine.png" /><a href="tel:%2B380679939916">+38 067 99 3 99 16</a></div>
+				<div><img class="contact_icon" src="image/phone-germany.png" /><a href="tel:%2B4917624168175">+49 176 241 68 175</a></div>
+				<div><img class="contact_icon" src="image/phone-germany.png" /><a href="tel:%2B4917699565994" >+49 176 995 65 994</div>
+				<div><img class="contact_icon" src="image/phone-viber.png" /><a href="viber://add?number=+380679939916" >+38 067 99 3 99 16</a></div>
+			</div>
+		</div>
+	</body>
+</html>
